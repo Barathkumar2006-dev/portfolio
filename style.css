@@ -1,0 +1,246 @@
+/* genral -setup */
+
+*{margin:0;
+  padding:0;
+  box-sizing:border-box;}
+
+
+
+  :root {
+          --font-large:3rem;
+          --font-medium:4rem;
+          --font-little:3rem;
+          --font-small:1rem;    
+
+          --line-large:50px;
+          --line-medium:40px;
+          --line-small:20px;
+   }
+
+/* main-content-1 */
+
+
+body{background:url(ave.svg);
+     background-repeat:no-repeat;
+     max-width:100%;
+     background-size:cover;
+}
+
+
+.head{display:flex; 
+      align-items:center;
+      margin:35px 7%;
+      justify-content:space-between;}
+
+
+.logo h1{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size:1.3rem;
+     font-weight:900;
+     color:wheat;
+}
+
+.about-page .ul a{padding:0 50px;
+                  list-style-type:none;
+                  text-decoration:none;
+                  color:black;
+                  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                  font-weight:600;
+                  text-transform:capitalize;
+                  font-size:1rem;}
+
+
+.menu-bar   i{color:black;
+              border:1px solid whitesmoke;
+              border-radius:50%;
+              padding:3px;
+}
+                                                               
+.call-me{padding:10px 25px;
+         border:none;
+         position:absolute;
+         top:3.5%;
+         right:3.5%;
+         border-radius:8px;
+         background:black;   
+         color:whitesmoke;
+         font-weight:900;
+         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.user-info{display:flex;
+           margin-right:10px;
+           gap:0.5rem;
+           font-size:0.9rem;
+           font-weight:bold;
+           font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           align-items:center;}
+
+
+.left-content h3{font-size:1.3rem;
+                 text-transform:capitalize;
+                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                 font-weight:800;
+                 color:whitesmoke;}
+
+.size{font-size:2rem;}
+
+.fornt{background: linear-gradient(220.55deg, #FFBB89 0%, #7B6AE0 100%);
+      background-clip:text;
+      color:transparent;}
+
+.left-content  h1{font-size:var(--font-large);
+                  color:whitesmoke;
+                  text-transform:capitalize;
+                  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                  line-height:var(--line-large);
+                  font-weight:900;}
+
+
+.left-content{margin:12% 0; 
+              max-width:100%;
+}
+
+.left-content p{font-size:0.9rem;
+                text-transform:capitalize;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight:800;
+                word-spacing:2px;
+                color:rgba(245, 245, 245, 0.775);
+                line-height:20px;
+}
+
+.main-content{margin:4rem auto;}
+
+.two-button{margin:20px auto;
+            display:flex;
+            gap:4%;}
+
+
+.two-button .hire-button{padding:10px 30px;
+                         border-radius:10px;
+                         border:none;
+                         background:rgba(245, 245, 245, 0.432);
+                         color:black;
+                         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                         font-size:0.9rem;
+                         text-transform:capitalize;
+                         font-weight:800;}
+
+.two-button .project-button{padding:10px 30px;
+                            border-radius:10px;
+                            background:rgba(245, 245, 245, 0.523);                            color:black;
+                            border:none;
+                            letter-spacing:1px;
+                            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size:0.9rem;
+                            text-transform:capitalize;
+                            font-weight:800;}
+
+.main-content{display:flex;
+              align-items:center;
+              justify-content:space-around;
+              
+          }
+
+.main-photo{max-width:40vh;
+            margin:8rem auto;
+            min-height:200px;
+            border-radius:50%;
+            outline:1px solid black;
+            outline-offset:10px;
+            border:1px solid whitesmoke;
+         
+}
+
+
+/* responsive - 1 header */
+
+@media screen and (max-width:750px)
+{
+.about-page .ul a{padding:0 20px;}
+
+}
+
+@media screen and (max-width:682px)
+{
+
+.about-page .ul a{display:none;}
+
+.call-me{display:none;}
+
+}
+
+@media screen and (max-width:1261px)
+{
+
+.about-page .ul a{background: linear-gradient(220.55deg, #FFBB89 0%, #7B6AE0 100%);
+     background-clip:text;
+     color:transparent;}
+
+
+}
+
+@media screen and (min-width:40rem)
+{
+     :root{
+
+          --font-large:6.5rem;
+
+          --line-large:100px;
+
+          
+     }
+
+     .two-button .project-button{padding:7px 25px;}
+
+
+     .two-button .hire-button{padding:7px 25px;}
+
+
+}
+
+@media screen and (max-width:559px)
+{
+
+.bx-dots-horizontal-rounded{background:whitesmoke;
+                            color:black;}    
+
+}
+
+@media screen and (max-width:961px)
+{
+
+.main-content{display:grid;
+              grid-template-rows:repeat(2,1fr);}
+
+
+.image-main .main-photo{display:flex;
+                         align-items:center;
+                         outline:1px solid whitesmoke;
+                         justify-content:center;
+                         margin:0.5rem auto;}
+
+.left-content{margin:0 1rem;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+
+
+
+
+
+
+
